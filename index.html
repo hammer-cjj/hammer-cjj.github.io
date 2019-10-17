@@ -177,8 +177,6 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global color.ui auto</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2019/10/13/Git教程/#more">more >></a>
-        
       
 
       
@@ -209,6 +207,104 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/10/13/Git教程/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-配置Hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/17/配置Hexo博客/">配置Hexo博客</a>
+    </h1>
+  
+
+        <!--显示阅读次数-->
+		
+		
+        <a href="/2019/10/17/配置Hexo博客/" class="archive-article-date">
+  	<time datetime="2019-10-17T12:11:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="博客主题yilia"><a href="#博客主题yilia" class="headerlink" title="博客主题yilia"></a>博客主题yilia</h2><p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener"><strong>yilia</strong></a>是一个简洁优雅的的<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>主题。</p>
+<p>打开<strong>git bash</strong>输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /f/test-blog  #切换到主目录</span><br><span class="line">git clone git@github.com:litten/hexo-theme-yilia.git themes/yilia  #下载到/f/text-blog/themes/yilia文件</span><br></pre></td></tr></table></figure>
+
+<p>修改主目录(/f/test-blog)下的<code>_config.yml</code>文件，将<code>theme: landscape</code>改成如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: yilia</span><br></pre></td></tr></table></figure>
+        
+      
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">gitment</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/博客搭建//" class="article-tag-list-link color5">博客搭建</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/17/配置Hexo博客/">展开全文 >></a>
         </p>
       
 
@@ -271,49 +367,9 @@
 <ol>
 <li>同时按下键盘上windows+r打开运行程序，在里面输入cmd，按回车打开命令行窗口。</li>
 <li>在命令行窗口输入<code>git version</code>，如果出现git版本号，例如<code>git version 2.23.0.1windows.1</code>，则说明<strong>git</strong>安装成功。</li>
-<li>在命令行窗口输入’node -v’，如果出现node.js的版本号，例如<code>v10.16.3</code>，则说明<strong>node.js</strong>安装成功。</li>
+<li>在命令行窗口输入<code>node -v</code>，如果出现node.js的版本号，例如<code>v10.16.3</code>，则说明<strong>node.js</strong>安装成功。</li>
 </ol>
-<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>安装完<strong>git</strong>后，可以利用<strong>git bash</strong>(Linux风格的shell)对<strong>hexo</strong>进行安装等操作。为了加快安装速度，我们利用npm(安装完<strong>Node.js</strong>后默认已经安装)安装<strong>cnpm</strong>，以后可以用<strong>cnpm</strong>安装<strong>hexo</strong>。打开<strong>git bash</strong>，输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=htp://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1. 安装Hexo"></a>1. 安装Hexo</h3><p>所有必备的程序安装完成后，就可以安装<strong>hexo</strong>。在<strong>git bash</strong>中输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，可以利用命令：<code>hexo -v</code> 进行验证。</p>
-<h3 id="2-建站"><a href="#2-建站" class="headerlink" title="2. 建站"></a>2. 建站</h3><p>在f盘新建一个test-blog，用于存放博客有关的所有文件。打开<strong>git bash</strong>，输入以下命令：</p>
-<figure class="highlight plain"><figcaption><span>command</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /f</span><br><span class="line">mkdir test-blog</span><br><span class="line">cd test-blog</span><br></pre></td></tr></table></figure>
-
-<p>在test-blog目录下输入以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>建站完成后，默认会创建一篇Hello World的博客。在主目录下(/f/test-blog)输入命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -s</span><br></pre></td></tr></table></figure>
-
-<p>即可启动本地测试服务器，在浏览器的地址栏输入’localhost:4000’，可以看到站点的效果。该命令主要用于本地的预览。在主目录下有个<code>_config.yml</code>文件，这个文件是站点的配置文件，更改网站的主题、部署方式等都需要修改该文件。</p>
-<h3 id="3-写作"><a href="#3-写作" class="headerlink" title="3. 写作"></a>3. 写作</h3><p>通过如下命令可以新建一篇文章，生成的文件存放在<code>source/_posts</code>文件夹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n name  # name可以是中文</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-部署"><a href="#4-部署" class="headerlink" title="4. 部署"></a>4. 部署</h3><ul>
-<li><p>本文将hexo部署至GitHub，首先登陆<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>,登陆后新建一个仓库，其中仓库名必须是<code>nickname.github.io</code>格式，例如：<a href="https://hammer-cjj.github.io/">hammer-cjj.github.io</a>。</p>
-</li>
-<li><p>安装用于部署的插件，在<strong>git bash</strong>中，进入到主目录下(/f/test-blog)输入：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改主目录下(/f/test-blog)的<code>_config.yml</code>文件，</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://github.com/hammer-cjj/hammer-cjj.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-
-<p>  <strong>注意：冒号后面必须有空格</strong></p>
-</li>
-<li><p>上传部署，命令需要在主目录(/f/test-blog/)下输入</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 hexo clean  # 清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line">2 hexo g      # 生成静态文件</span><br><span class="line">3 hexo d      # 部署网站</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol>
-<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></li>
-<li><a href="https://www.bilibili.com/video/av44544186?from=search&seid=4897051327170372650" target="_blank" rel="noopener">B站CodeSheep视频</a></li>
-</ol>
-
+        
       
 
       
@@ -475,7 +531,7 @@
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
 		-->
-    </div>
+	</div>
   </div>
 </footer>
     </div>
@@ -554,6 +610,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">gitment</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -603,7 +667,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">hammer-cjj&lt;br&gt;一只低级Java程序猿</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">hammer-cjj&lt;br&gt;一只低级程序猿</div>
   	  	
     	</section>
     
