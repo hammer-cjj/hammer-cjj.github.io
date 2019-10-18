@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="hammer-cjj Blog">
 <meta property="og:description" content="Git和Node.js安装Hexo需要Git和Node.js：   Git Node.js   Git和Node.js可以通过官网进行安装，对于Windows用户直接下载安装程序，双击进行安装。如何确认已经正确安装上述两个软件：  同时按下键盘上windows+r打开运行程序，在里面输入cmd，按回车打开命令行窗口。 在命令行窗口输入git version，如果出现git版本号，例如git ver">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-17T14:47:30.395Z">
+<meta property="og:updated_time" content="2019-10-18T12:31:43.550Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建Hexo博客(Windows)">
 <meta name="twitter:description" content="Git和Node.js安装Hexo需要Git和Node.js：   Git Node.js   Git和Node.js可以通过官网进行安装，对于Windows用户直接下载安装程序，双击进行安装。如何确认已经正确安装上述两个软件：  同时按下键盘上windows+r打开运行程序，在里面输入cmd，按回车打开命令行窗口。 在命令行窗口输入git version，如果出现git版本号，例如git ver">
@@ -216,7 +216,7 @@
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>修改主目录下(/f/test-blog)的<code>_config.yml</code>文件，</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"><span class="built_in">type</span>: git</span><br><span class="line">repo: https://github.com/hammer-cjj/hammer-cjj.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
+  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">repo:</span> <span class="attr">https://github.com/hammer-cjj/hammer-cjj.github.io.git</span></span><br><span class="line"><span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
 <p>  <strong>注意：冒号后面必须有空格</strong></p>
 </li>
