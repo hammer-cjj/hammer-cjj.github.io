@@ -269,77 +269,8 @@
 </ul>
 </blockquote>
 <h2 id="工作管理"><a href="#工作管理" class="headerlink" title="工作管理"></a>工作管理</h2><h3 id="一、任务督办管理（处长和管理员）"><a href="#一、任务督办管理（处长和管理员）" class="headerlink" title="一、任务督办管理（处长和管理员）"></a>一、任务督办管理（处长和管理员）</h3><p>管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。</p>
-<ol>
-<li>处长下发 -&gt; 指定责任人和参与人 -&gt; 责任人签收 -&gt; 反馈 -&gt; 任务完成 -&gt; 分配人批示</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">op1=&gt;operation: 下发任务(处长/副处长/科长)</span><br><span class="line">op2=&gt;operation: 任务签收(责任人)</span><br><span class="line">op3=&gt;operation: 任务完成</span><br><span class="line">op4=&gt;operation: 任务批示</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line"></span><br><span class="line">st-&gt;op1-&gt;op2-&gt;e</span><br></pre></td></tr></table></figure>
-
-<h3 id="二、备忘任务管理"><a href="#二、备忘任务管理" class="headerlink" title="二、备忘任务管理"></a>二、备忘任务管理</h3><h3 id="三、任务审核管理"><a href="#三、任务审核管理" class="headerlink" title="三、任务审核管理"></a>三、任务审核管理</h3><h2 id="任务考核管理"><a href="#任务考核管理" class="headerlink" title="任务考核管理"></a>任务考核管理</h2><p>每个任务的分值为：(任务难度 + 任务等级 + 任务重要性 + 完成时效) x 比例系数</p>
-<table>
-<thead>
-<tr>
-<th align="center">任务难度</th>
-<th align="center">分值</th>
-<th align="center">任务等级</th>
-<th align="center">分值</th>
-<th align="center">任务重要性</th>
-<th align="center">分值</th>
-<th align="center">完成时效</th>
-<th align="center">分值</th>
-<th align="center">完成情况</th>
-<th align="center">比例系数</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">一般</td>
-<td align="center">1</td>
-<td align="center">一般</td>
-<td align="center">1</td>
-<td align="center">一般</td>
-<td align="center">1</td>
-<td align="center">超期完成</td>
-<td align="center">1</td>
-<td align="center">较好(3)</td>
-<td align="center">1.5</td>
-</tr>
-<tr>
-<td align="center">困难</td>
-<td align="center">3</td>
-<td align="center">紧急</td>
-<td align="center">2</td>
-<td align="center">重要</td>
-<td align="center">2</td>
-<td align="center">按时完成</td>
-<td align="center">2</td>
-<td align="center">一般(2)</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">特别困难</td>
-<td align="center">5</td>
-<td align="center">特别紧急</td>
-<td align="center">3</td>
-<td align="center">特别重要</td>
-<td align="center">3</td>
-<td align="center">提前完成</td>
-<td align="center">3</td>
-<td align="center">部分完成(1)</td>
-<td align="center">0.5</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">未完成</td>
-<td align="center">0</td>
-<td align="center">未完成</td>
-<td align="center">0</td>
-</tr>
-</tbody></table>
-
+<p>下发任务 -&gt; 指定责任人和参与人 -&gt; 责任人签收 -&gt; 反馈 -&gt; 任务完成 -&gt; 分配人批示</p>
+        
       
 
       
@@ -349,13 +280,24 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
+        			<a href="/categories/项目//" class="article-tag-list-link color3">项目</a>
         		</li>
       		
 		</ul>
@@ -848,15 +790,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">gitment</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
             
             <div class="clearfix"></div>

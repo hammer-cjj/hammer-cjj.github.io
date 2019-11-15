@@ -8,17 +8,18 @@
   <link rel="dns-prefetch" href="https://hammer-cjj.github.io">
   <title>任务督办系统 | hammer-cjj Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示  1234">
+  <meta name="description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。 下发任务 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
 <meta property="og:title" content="任务督办系统">
 <meta property="og:url" content="https://hammer-cjj.github.io/2019/11/13/任务督办系统/index.html">
 <meta property="og:site_name" content="hammer-cjj Blog">
-<meta property="og:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示  1234">
+<meta property="og:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。 下发任务 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-15T07:45:04.633Z">
+<meta property="og:updated_time" content="2019-11-15T14:01:14.684Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="任务督办系统">
-<meta name="twitter:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示  1234">
+<meta name="twitter:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。 下发任务 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示">
   
   
     <link rel="icon" href="/images/favicon.ico">
@@ -184,12 +185,28 @@
 </ul>
 </blockquote>
 <h2 id="工作管理"><a href="#工作管理" class="headerlink" title="工作管理"></a>工作管理</h2><h3 id="一、任务督办管理（处长和管理员）"><a href="#一、任务督办管理（处长和管理员）" class="headerlink" title="一、任务督办管理（处长和管理员）"></a>一、任务督办管理（处长和管理员）</h3><p>管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。</p>
-<ol>
-<li>处长下发 -&gt; 指定责任人和参与人 -&gt; 责任人签收 -&gt; 反馈 -&gt; 任务完成 -&gt; 分配人批示</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">op1=&gt;operation: 下发任务(处长/副处长/科长)</span><br><span class="line">op2=&gt;operation: 任务签收(责任人)</span><br><span class="line">op3=&gt;operation: 任务完成</span><br><span class="line">op4=&gt;operation: 任务批示</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line"></span><br><span class="line">st-&gt;op1-&gt;op2-&gt;e</span><br></pre></td></tr></table></figure>
+<p>下发任务 -&gt; 指定责任人和参与人 -&gt; 责任人签收 -&gt; 反馈 -&gt; 任务完成 -&gt; 分配人批示</p>
+<a id="more"></a>
+<div align="center">
 
-<h3 id="二、备忘任务管理"><a href="#二、备忘任务管理" class="headerlink" title="二、备忘任务管理"></a>二、备忘任务管理</h3><h3 id="三、任务审核管理"><a href="#三、任务审核管理" class="headerlink" title="三、任务审核管理"></a>三、任务审核管理</h3><h2 id="任务考核管理"><a href="#任务考核管理" class="headerlink" title="任务考核管理"></a>任务考核管理</h2><p>每个任务的分值为：(任务难度 + 任务等级 + 任务重要性 + 完成时效) x 比例系数</p>
+<div id="flowchart-0" class="flow-chart"></div>
+
+</div>
+
+<blockquote>
+<ul>
+<li>处长：下发任务时必须指定责任人，可以不指定参与人。如果不指定参与人，可以由责任人（有副处长或科长权限）进行指定。</li>
+<li>副处长/科长：下发任务时必须指定责任人，可以不指定参与人。</li>
+<li>其他角色无下发任务权限。</li>
+<li>只有责任人才能签收任务，责任人或者参与人中的任何一个人都可以点击任务完成，只要任何一个点击，任务即完成。</li>
+<li>任务分配人可以对完成的任务进行批示。</li>
+</ul>
+</blockquote>
+<h3 id="二、备忘任务管理（处长）"><a href="#二、备忘任务管理（处长）" class="headerlink" title="二、备忘任务管理（处长）"></a>二、备忘任务管理（处长）</h3><p>备忘管理的功能是把将要下发的任务添加，但是不下发，点击完成督办按钮才会将任务下发。</p>
+<h3 id="三、我分配的任务（副处长-科长）"><a href="#三、我分配的任务（副处长-科长）" class="headerlink" title="三、我分配的任务（副处长/科长）"></a>三、我分配的任务（副处长/科长）</h3><p>副处长或科长角色下发给其他角色的任务</p>
+<h3 id="四、我负责的任务（副处长-科长-其他）"><a href="#四、我负责的任务（副处长-科长-其他）" class="headerlink" title="四、我负责的任务（副处长/科长/其他）"></a>四、我负责的任务（副处长/科长/其他）</h3><p>责任人是我的任务</p>
+<h3 id="五、我参与的任务（副处长-科长-其他）"><a href="#五、我参与的任务（副处长-科长-其他）" class="headerlink" title="五、我参与的任务（副处长/科长/其他）"></a>五、我参与的任务（副处长/科长/其他）</h3><p>参与人是我的参与</p>
+<h2 id="任务考核管理"><a href="#任务考核管理" class="headerlink" title="任务考核管理"></a>任务考核管理</h2><p>每个任务的分值为：(任务难度 + 任务等级 + 任务重要性 + 完成时效) x 比例系数</p>
 <table>
 <thead>
 <tr>
@@ -254,6 +271,23 @@
 <td align="center">0</td>
 </tr>
 </tbody></table>
+<h3 id="一、任务考核"><a href="#一、任务考核" class="headerlink" title="一、任务考核"></a>一、任务考核</h3><p>统计每个人的任务个数以及相应的分值，包括柱状图显示与列表显示。</p>
+<h3 id="二、刷新任务考核"><a href="#二、刷新任务考核" class="headerlink" title="二、刷新任务考核"></a>二、刷新任务考核</h3><p>任务考核的分值是每天凌晨2点自动进行统计，也可以手动进行刷新。</p>
+<h3 id="三、统计超期任务"><a href="#三、统计超期任务" class="headerlink" title="三、统计超期任务"></a>三、统计超期任务</h3><blockquote>
+<ul>
+<li>一个任务在截止日期前3天还没完成的，被认定为即将超期。当超过截止日期还没完成，被认定为超期。</li>
+<li>每天凌晨1点自动统计已经超期的任务。</li>
+<li>登陆系统后，右下角弹出即将超期的任务个数。处长权限包括所有即将超期任务的个数，其他权限显示作为责任人即将超期的个数和作为参与人即将超期的任务个数。<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始
+op1=>operation: 下发任务(处长/副处长/科长)
+op2=>operation: 任务签收(责任人)
+op3=>operation: 任务反馈(责任人/参与人)
+op4=>operation: 任务完成(责任人/参与人)
+op5=>operation: 任务批示(分配人)
+e=>end: 结束
+
+st->op1->op2->op3->op4->op5->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></li>
+</ul>
+</blockquote>
 
       
 
@@ -264,13 +298,24 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
+        			<a href="/categories/项目//" class="article-tag-list-link color3">项目</a>
         		</li>
       		
 		</ul>
@@ -317,7 +362,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#权限管理"><span class="toc-number">1.</span> <span class="toc-text">权限管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工作管理"><span class="toc-number">2.</span> <span class="toc-text">工作管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、任务督办管理（处长和管理员）"><span class="toc-number">2.1.</span> <span class="toc-text">一、任务督办管理（处长和管理员）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、备忘任务管理"><span class="toc-number">2.2.</span> <span class="toc-text">二、备忘任务管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、任务审核管理"><span class="toc-number">2.3.</span> <span class="toc-text">三、任务审核管理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#任务考核管理"><span class="toc-number">3.</span> <span class="toc-text">任务考核管理</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#权限管理"><span class="toc-number">1.</span> <span class="toc-text">权限管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工作管理"><span class="toc-number">2.</span> <span class="toc-text">工作管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、任务督办管理（处长和管理员）"><span class="toc-number">2.1.</span> <span class="toc-text">一、任务督办管理（处长和管理员）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、备忘任务管理（处长）"><span class="toc-number">2.2.</span> <span class="toc-text">二、备忘任务管理（处长）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、我分配的任务（副处长-科长）"><span class="toc-number">2.3.</span> <span class="toc-text">三、我分配的任务（副处长/科长）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、我负责的任务（副处长-科长-其他）"><span class="toc-number">2.4.</span> <span class="toc-text">四、我负责的任务（副处长/科长/其他）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、我参与的任务（副处长-科长-其他）"><span class="toc-number">2.5.</span> <span class="toc-text">五、我参与的任务（副处长/科长/其他）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#任务考核管理"><span class="toc-number">3.</span> <span class="toc-text">任务考核管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、任务考核"><span class="toc-number">3.1.</span> <span class="toc-text">一、任务考核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、刷新任务考核"><span class="toc-number">3.2.</span> <span class="toc-text">二、刷新任务考核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、统计超期任务"><span class="toc-number">3.3.</span> <span class="toc-text">三、统计超期任务</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -454,15 +499,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">gitment</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
             
             <div class="clearfix"></div>
