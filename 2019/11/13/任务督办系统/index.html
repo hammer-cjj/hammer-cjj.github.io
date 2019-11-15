@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="https://hammer-cjj.github.io">
   <title>任务督办系统 | hammer-cjj Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示    二、">
+  <meta name="description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示  1234">
 <meta property="og:type" content="article">
 <meta property="og:title" content="任务督办系统">
 <meta property="og:url" content="https://hammer-cjj.github.io/2019/11/13/任务督办系统/index.html">
 <meta property="og:site_name" content="hammer-cjj Blog">
-<meta property="og:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示    二、">
+<meta property="og:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示  1234">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-11-15T07:45:04.633Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="任务督办系统">
-<meta name="twitter:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示    二、">
+<meta name="twitter:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示  1234">
   
   
     <link rel="icon" href="/images/favicon.ico">
@@ -187,7 +187,7 @@
 <ol>
 <li>处长下发 -&gt; 指定责任人和参与人 -&gt; 责任人签收 -&gt; 反馈 -&gt; 任务完成 -&gt; 分配人批示</li>
 </ol>
-<div id="flowchart-0" class="flow-chart"></div>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">op1=&gt;operation: 下发任务(处长/副处长/科长)</span><br><span class="line">op2=&gt;operation: 任务签收(责任人)</span><br><span class="line">op3=&gt;operation: 任务完成</span><br><span class="line">op4=&gt;operation: 任务批示</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line"></span><br><span class="line">st-&gt;op1-&gt;op2-&gt;e</span><br></pre></td></tr></table></figure>
 
 <h3 id="二、备忘任务管理"><a href="#二、备忘任务管理" class="headerlink" title="二、备忘任务管理"></a>二、备忘任务管理</h3><h3 id="三、任务审核管理"><a href="#三、任务审核管理" class="headerlink" title="三、任务审核管理"></a>三、任务审核管理</h3><h2 id="任务考核管理"><a href="#任务考核管理" class="headerlink" title="任务考核管理"></a>任务考核管理</h2><p>每个任务的分值为：(任务难度 + 任务等级 + 任务重要性 + 完成时效) x 比例系数</p>
 <table>
@@ -252,25 +252,6 @@
 <td align="center">0</td>
 <td align="center">未完成</td>
 <td align="center">0</td>
-</tr>
-<tr>
-<td align="center"><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始
-op1=>operation: 下发任务(处长/副处长/科长)
-op2=>operation: 任务签收(责任人)
-op3=>operation: 任务完成
-op4=>operation: 任务批示
-e=>end: 结束
-
-st->op1->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
 </tr>
 </tbody></table>
 
@@ -465,15 +446,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">encryptAsDiary</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -482,6 +459,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">gitment</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
             
             <div class="clearfix"></div>
