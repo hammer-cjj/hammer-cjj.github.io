@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://hammer-cjj.github.io">
-  <title>hammer-cjj Blog</title>
+  <title>任务督办系统 | hammer-cjj Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="hammer-cjj Blog">
-<meta property="og:url" content="https://hammer-cjj.github.io/index.html">
+  <meta name="description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示    二、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="任务督办系统">
+<meta property="og:url" content="https://hammer-cjj.github.io/2019/11/13/任务督办系统/index.html">
 <meta property="og:site_name" content="hammer-cjj Blog">
+<meta property="og:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示    二、">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-15T07:45:04.633Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hammer-cjj Blog">
+<meta name="twitter:title" content="任务督办系统">
+<meta name="twitter:description" content="权限管理本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：   管理员 处长 副处长 科长 其他   工作管理一、任务督办管理（处长和管理员）管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。  处长下发 -&amp;gt; 指定责任人和参与人 -&amp;gt; 责任人签收 -&amp;gt; 反馈 -&amp;gt; 任务完成 -&amp;gt; 分配人批示    二、">
   
   
     <link rel="icon" href="/images/favicon.ico">
@@ -139,315 +143,137 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-    <article id="post-Git教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+<article id="post-任务督办系统" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/13/Git教程/">Git教程</a>
+    <h1 class="article-title" itemprop="name">
+      任务督办系统
     </h1>
   
 
         <!--显示阅读次数-->
 		
+		  <br/>
+		  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+		  <span class="icon-sort"></span>
+		  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+					阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+		  </span>
+		  </a>
 		
-        <a href="/2019/10/13/Git教程/" class="archive-article-date">
-  	<time datetime="2019-10-13T04:21:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-13</time>
+		
+        <a href="/2019/11/13/任务督办系统/" class="archive-article-date">
+  	<time datetime="2019-11-13T08:05:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="git初始设置"><a href="#git初始设置" class="headerlink" title="git初始设置"></a>git初始设置</h2><ul>
-<li>设置姓名和邮箱地址</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Firstname Lastname&quot;</span><br><span class="line">git config --global user.email &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>设置notepad++为默认的编辑器</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">## 前提是需要将notepad++添加到环境变量</span><br><span class="line">git config --global core.editor notepad++</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>提高命令输出的可读性</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global color.ui auto</span><br></pre></td></tr></table></figure>
-        
-      
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/13/Git教程/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Token-for-github-picture-repository" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/17/Token-for-github-picture-repository/">Token for github picture repository</a>
-    </h1>
-  
-
-        <!--显示阅读次数-->
-		
-		
-        <a href="/2019/10/17/Token-for-github-picture-repository/" class="archive-article-date">
-  	<time datetime="2019-10-17T15:01:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        Here's something encrypted, password is required to continue reading.
-        
-      
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">encryptAsDiary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/17/Token-for-github-picture-repository/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-配置Hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/17/配置Hexo博客/">配置Hexo博客</a>
-    </h1>
-  
-
-        <!--显示阅读次数-->
-		
-		
-        <a href="/2019/10/17/配置Hexo博客/" class="archive-article-date">
-  	<time datetime="2019-10-17T12:11:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="博客主题yilia"><a href="#博客主题yilia" class="headerlink" title="博客主题yilia"></a>博客主题yilia</h2><p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener"><strong>yilia</strong></a>是一个简洁优雅的的<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>主题。</p>
-<p>打开<strong>git bash</strong>输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /f/<span class="built_in">test</span>-blog  <span class="comment">#切换到主目录</span></span><br><span class="line">git <span class="built_in">clone</span> git@github.com:litten/hexo-theme-yilia.git themes/yilia  <span class="comment">#下载到/f/text-blog/themes/yilia文件</span></span><br></pre></td></tr></table></figure>
-
-<p>修改主目录(/f/test-blog)下的<code>_config.yml</code>文件，将<code>theme: landscape</code>改成如下：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">yilia</span></span><br></pre></td></tr></table></figure>
-        
-      
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">gitment</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客搭建//" class="article-tag-list-link color5">博客搭建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/17/配置Hexo博客/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-搭建Hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/14/搭建Hexo博客/">搭建Hexo博客(Windows)</a>
-    </h1>
-  
-
-        <!--显示阅读次数-->
-		
-		
-        <a href="/2019/10/14/搭建Hexo博客/" class="archive-article-date">
-  	<time datetime="2019-10-14T12:17:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Git和Node-js"><a href="#Git和Node-js" class="headerlink" title="Git和Node.js"></a>Git和Node.js</h2><p>安装<strong>Hexo</strong>需要<strong>Git</strong>和<strong>Node.js</strong>：</p>
+        <h2 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h2><p>本系统一共分了五个角色，不同的角色对应不同的权限，权限从高到低分别是：</p>
 <blockquote>
 <ul>
-<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+<li>管理员</li>
+<li>处长</li>
+<li>副处长</li>
+<li>科长</li>
+<li>其他</li>
 </ul>
 </blockquote>
-<p>Git和Node.js可以通过官网进行安装，对于Windows用户直接下载安装程序，双击进行安装。如何确认已经正确安装上述两个软件：</p>
+<h2 id="工作管理"><a href="#工作管理" class="headerlink" title="工作管理"></a>工作管理</h2><h3 id="一、任务督办管理（处长和管理员）"><a href="#一、任务督办管理（处长和管理员）" class="headerlink" title="一、任务督办管理（处长和管理员）"></a>一、任务督办管理（处长和管理员）</h3><p>管理员权限可以查看所有已经通过审核下发的任务，而处长权限只能查看本部门已经通过审核下发的任务。</p>
 <ol>
-<li>同时按下键盘上windows+r打开运行程序，在里面输入cmd，按回车打开命令行窗口。</li>
-<li>在命令行窗口输入<code>git version</code>，如果出现git版本号，例如<code>git version 2.23.0.1windows.1</code>，则说明<strong>git</strong>安装成功。</li>
-<li>在命令行窗口输入<code>node -v</code>，如果出现node.js的版本号，例如<code>v10.16.3</code>，则说明<strong>node.js</strong>安装成功。</li>
+<li>处长下发 -&gt; 指定责任人和参与人 -&gt; 责任人签收 -&gt; 反馈 -&gt; 任务完成 -&gt; 分配人批示</li>
 </ol>
-        
+<div id="flowchart-0" class="flow-chart"></div>
+
+<h3 id="二、备忘任务管理"><a href="#二、备忘任务管理" class="headerlink" title="二、备忘任务管理"></a>二、备忘任务管理</h3><h3 id="三、任务审核管理"><a href="#三、任务审核管理" class="headerlink" title="三、任务审核管理"></a>三、任务审核管理</h3><h2 id="任务考核管理"><a href="#任务考核管理" class="headerlink" title="任务考核管理"></a>任务考核管理</h2><p>每个任务的分值为：(任务难度 + 任务等级 + 任务重要性 + 完成时效) x 比例系数</p>
+<table>
+<thead>
+<tr>
+<th align="center">任务难度</th>
+<th align="center">分值</th>
+<th align="center">任务等级</th>
+<th align="center">分值</th>
+<th align="center">任务重要性</th>
+<th align="center">分值</th>
+<th align="center">完成时效</th>
+<th align="center">分值</th>
+<th align="center">完成情况</th>
+<th align="center">比例系数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一般</td>
+<td align="center">1</td>
+<td align="center">一般</td>
+<td align="center">1</td>
+<td align="center">一般</td>
+<td align="center">1</td>
+<td align="center">超期完成</td>
+<td align="center">1</td>
+<td align="center">较好(3)</td>
+<td align="center">1.5</td>
+</tr>
+<tr>
+<td align="center">困难</td>
+<td align="center">3</td>
+<td align="center">紧急</td>
+<td align="center">2</td>
+<td align="center">重要</td>
+<td align="center">2</td>
+<td align="center">按时完成</td>
+<td align="center">2</td>
+<td align="center">一般(2)</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">特别困难</td>
+<td align="center">5</td>
+<td align="center">特别紧急</td>
+<td align="center">3</td>
+<td align="center">特别重要</td>
+<td align="center">3</td>
+<td align="center">提前完成</td>
+<td align="center">3</td>
+<td align="center">部分完成(1)</td>
+<td align="center">0.5</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">未完成</td>
+<td align="center">0</td>
+<td align="center">未完成</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center"><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始
+op1=>operation: 下发任务(处长/副处长/科长)
+op2=>operation: 任务签收(责任人)
+op3=>operation: 任务完成
+op4=>operation: 任务批示
+e=>end: 结束
+
+st->op1->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+
       
 
       
@@ -457,24 +283,13 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/博客搭建//" class="article-tag-list-link color5">博客搭建</a>
+        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
         		</li>
       		
 		</ul>
@@ -482,16 +297,24 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/14/搭建Hexo博客/">展开全文 >></a>
-        </p>
-      
 
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/17/Token-for-github-picture-repository/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Token for github picture repository</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -506,92 +329,52 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <!--显示阅读次数-->
-		
-		
-        <a href="/2019/10/13/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-13T03:16:16.432Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/13/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#权限管理"><span class="toc-number">1.</span> <span class="toc-text">权限管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工作管理"><span class="toc-number">2.</span> <span class="toc-text">工作管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、任务督办管理（处长和管理员）"><span class="toc-number">2.1.</span> <span class="toc-text">一、任务督办管理（处长和管理员）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、备忘任务管理"><span class="toc-number">2.2.</span> <span class="toc-text">二、备忘任务管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、任务审核管理"><span class="toc-number">2.3.</span> <span class="toc-text">三、任务审核管理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#任务考核管理"><span class="toc-number">3.</span> <span class="toc-text">任务考核管理</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
+  
+  
+  
 
   
+
+  
+  
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "Wed Nov 13 2019 16:05:55 GMT+0800",
+  owner: 'hammer-cjj',
+  repo: 'hammer-cjj.github.io',
+  oauth: {
+    client_id: '991d91467d9f6f887767',
+    client_secret: '22c7409ebaea286307558fb533bad0d551a98506',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+
+
   
 
 
@@ -616,8 +399,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
